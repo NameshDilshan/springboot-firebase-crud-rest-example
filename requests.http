@@ -1,0 +1,30 @@
+GET http://localhost:8080/api/products
+Accept: application/json
+
+###
+GET http://localhost:8080/api/products/sony
+Accept: application/json
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "apple",
+  "description" : "hi apple"
+}
+
+###
+PUT http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "sony",
+  "description" : "hi sony UPDATED"
+}
+
+###
+DELETE http://localhost:8080/api/products/apple
+Accept: application/json
+
+###
